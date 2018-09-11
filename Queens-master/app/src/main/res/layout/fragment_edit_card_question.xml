@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_question_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_card_text_question"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="top|left"
+        android:inputType="text|textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_question_title" />
+
+    <TextView
+        android:id="@+id/tv_draw_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/include_drawable_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_edit_card_text_question" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_drawing_image_layout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_edit_card_text_question">
+
+        <TextView
+            android:id="@+id/tv_color_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="@string/select_color"
+            app:layout_constraintBottom_toTopOf="@+id/iv_red_selection"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_green_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_red_selection"
+            app:srcCompat="@color/green" />
+
+        <ImageView
+            android:id="@+id/iv_red_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/iv_grey_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_purple_selection"
+            app:srcCompat="@color/grey" />
+
+        <ImageView
+            android:id="@+id/iv_white_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_blue_selection"
+            app:srcCompat="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/iv_black_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_green_selection"
+            app:srcCompat="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/iv_purple_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_white_selection"
+            app:srcCompat="@color/purple" />
+
+        <ImageView
+            android:id="@+id/iv_blue_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_black_selection"
+            app:srcCompat="@android:color/holo_blue_dark" />
+
+        <ImageView
+            android:id="@+id/iv_orange_selection"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_grey_selection"
+            app:srcCompat="@color/orange" />
+
+        <ImageButton
+            android:id="@+id/ib_increase_stroke_size"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add" />
+
+        <TextView
+            android:id="@+id/tv_stroke_size_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_stroke_size"
+            app:layout_constraintBottom_toTopOf="@+id/iv_orange_selection"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ib_decrease_stroke_size"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/dv_image_draw"
+            app:layout_constraintStart_toEndOf="@+id/iv_orange_selection"
+            app:srcCompat="@drawable/ic_remove" />
+
+        <com.queens.flashcards.Presentation.Flashcard.DrawingView
+            android:id="@+id/dv_image_draw"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/save_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_include_drawable_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:checkedButton="@+id/rb_dont_include_image"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_draw_title">
+
+        <RadioButton
+            android:id="@+id/rb_include_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/rb_dont_include_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

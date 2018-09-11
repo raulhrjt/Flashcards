@@ -1,0 +1,80 @@
+<resources>
+    <string name="add">Add</string>
+    <string name="app_name">Flashcards</string>
+    <string name="answerIsTrue">Answer:</string>
+    <string name="question">Question:</string>
+    <string name="answer_type">Answer Type:</string>
+    <string name="text_answer">Text</string>
+    <string name="categories">Categories:</string>
+    <string name="save">Save</string>
+    <string name="name_missing">Your Flashcard does not have a valid Name. (Can\'t be empty)</string>
+    <string name="question_missing">Your Flashcard does not have a valid Question. (Can\'t be empty)</string>
+    <string name="answer_missing">Your Flashcard does not have a valid Answer. (Can\'t be empty)</string>
+    <string name="flashcard_dup_name">A Flashcard with that name already exists.</string>
+    <string name="success_card_saved">Success! Your Flashcard has been saved.</string>
+    <string name="success_card_created">Success! Your Flashcard has been created.</string>
+    <string name="cards">Cards</string>
+    <string name="categoriesButton">Categories</string>
+    <string name="play_game">Play Game!</string>
+    <string name="manage_cards">Manage Cards</string>
+    <string name="edit_card">Edit Card</string>
+    <string name="delete">Delete</string>
+    <string name="view_description">Show result</string>>
+    <string name="return_to_main">Return</string>
+    <string name="name">Name</string>
+    <string name="score">Score:</string>
+    <string name="see_answer">See answerIsTrue</string>
+    <string name="category_name_missing">A Category requires a name</string>
+    <string name="category_dup_name">A Category with that name already exists.</string>
+    <string name="create">Create</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_category_name">Enter a Category name</string>
+    <string name="failed_to_save">Failed to save the card</string>
+    <string name="failed_to_delete">Failed to delete the Category</string>
+    <string name="failed_to_update_category">Failed to update the Category</string>
+    <string name="failed_to_remove_flashcard">Failed to remove the Flashcard</string>
+    <string name="exit_gg">Exit</string>
+    <string name="next_card">Next Card</string>
+    <string name="try_again">Try Again</string>
+    <string name="submit">Submit</string>
+    <string name="view_answer">View Answer</string>
+    <string name="true_option">True</string>
+    <string name="false_option">False</string>
+    <string name="select_answer">Select Your Answer</string>
+    <string name="correct_answer">Correct Answer</string>
+    <string name="your_answer">Your Answer</string>
+    <string name="were_you_correct">Were you correct?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="marked_correct">Your answer has been saved as correct</string>
+    <string name="marked_incorrect">Your answer has been saved as incorrect</string>
+    <string name="you_were_correct">You guessed correctly</string>
+    <string name="you_were_incorrect">You guessed incorrectly</string>
+    <string name="number_questions">Number of Questions:</string>
+    <string name="number_answers_correct">Number of Answers Correct:</string>
+    <string name="number_answers_incorrect">Number of Answers Incorrect:</string>
+    <string name="results">Results</string>
+    <string name="true_false">True/False</string>
+    <string name="incorrect_answers">Incorrect Answers:</string>
+    <string name="multiple_choice">Multiple Choice</string>
+    <string name="include_drawable_image">Include a drawable image?</string>
+    <string name="select_color">Select a Colour</string>
+    <string name="change_stroke_size">Change stroke size</string>
+    <string name="save_image">Save Image</string>
+    <string name="empty_category"> Category you selected has no Flashcards, as such the game cannot start. Return and choose another
+        category to use.</string>
+    <string name="time_limit">Enter a time limit:</string>
+    <string name="start_game">Start Game</string>
+    <string name="time_limit_remaining">Remaining time (Seconds): </string>
+    <string name="select_cards">Select the cards to include (All are selected by default)</string>
+    <string name="reverse_switch">Reverse Question and Answer</string>
+    <string name="max_num_cards">Enter a max number of cards:</string>
+    <string name="select_category">Select a category and start</string>
+    <string name="content_description">Content description</string>
+
+    <string-array name="tab_options">
+        <item>Options</item>
+        <item>Question</item>
+        <item>Answer</item>
+    </string-array>
+</resources>
